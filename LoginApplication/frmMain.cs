@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace LoginApplication
@@ -68,5 +69,31 @@ namespace LoginApplication
             var People = this.People;
             dataGridView1.DataSource = People;
         }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.Hide();
+            pdfwindow pdf = new pdfwindow();
+            pdf.Show();
+        }
+        private void GO_Click(object sender, EventArgs e)
+        {
+            
+                string filter = FilterbyclientId.Text.Trim();
+
+                if (string.IsNullOrEmpty(filter))
+                {
+                    // If the filter is empty or null, show all rows
+                    dataGridView1.DataSource = People;
+                }
+                else
+                {
+                    // Filter the rows based on the Clientid column
+                    var filteredData = People.Where(p => p.Clientid.Contains(filter)).ToList();
+                    dataGridView1.DataSource = filteredData;
+                }
+            }
+
+        }
     }
-}
+
