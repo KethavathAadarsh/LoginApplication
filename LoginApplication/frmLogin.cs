@@ -53,5 +53,10 @@ namespace LoginApplication
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

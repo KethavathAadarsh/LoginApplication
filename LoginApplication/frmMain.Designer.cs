@@ -33,6 +33,7 @@
             this.FilterbyclientId = new System.Windows.Forms.TextBox();
             this.GO = new System.Windows.Forms.Button();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.printpdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
@@ -80,11 +81,22 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
+            // printpdf
+            // 
+            this.printpdf.Location = new System.Drawing.Point(447, 12);
+            this.printpdf.Name = "printpdf";
+            this.printpdf.Size = new System.Drawing.Size(75, 23);
+            this.printpdf.TabIndex = 4;
+            this.printpdf.Text = "printpdf";
+            this.printpdf.UseVisualStyleBackColor = true;
+            this.printpdf.Click += new System.EventHandler(this.Printpdf_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 337);
+            this.Controls.Add(this.printpdf);
             this.Controls.Add(this.GO);
             this.Controls.Add(this.FilterbyclientId);
             this.Controls.Add(this.dataGridView1);
@@ -108,5 +120,6 @@
         private System.Windows.Forms.TextBox FilterbyclientId;
         private System.Windows.Forms.Button GO;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.Button printpdf;
     }
 }
