@@ -13,6 +13,6 @@ namespace LoginApplication
         public string Preparer { get; set; }
         public string Officegroup { get; set; }
         public string Status { get; set; }
-        public string Lastactivated { get; set; }
+        public string Lastactivity { get; set; }
     }
 }
