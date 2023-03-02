@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Windows.Forms;
 
 namespace LoginApplication
@@ -27,6 +28,7 @@ namespace LoginApplication
                 Officegroup = "PCLLP",
                 Status = "pdf review",
                 Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
             });
             list.Add(new Client()
             {
@@ -37,6 +39,8 @@ namespace LoginApplication
                 Officegroup = "PCLLP",
                 Status = "pdf done",
                 Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
             });
             list.Add(new Client()
             {
@@ -47,6 +51,8 @@ namespace LoginApplication
                 Officegroup = "PCLLP",
                 Status = "pdf done",
                 Lastactivity = "Return Printed",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
             });
             return list;
         }
@@ -73,8 +79,7 @@ namespace LoginApplication
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             this.Hide();
-            pdfwindow pdf = new pdfwindow();
-            pdf.Show();
+           
         }
         private void GO_Click(object sender, EventArgs e)
         {
@@ -94,6 +99,72 @@ namespace LoginApplication
                 }
             }
 
+        private void Printpdf_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Get the selected row and its data source
+                DataGridViewRow row = dataGridView1.SelectedRows[0];
+                Client client = row.DataBoundItem as Client;
+
+
+                if (client != null)
+                {
+                    // Show a dialog box to get the file path
+                    SaveFileDialog saveFileDialog = new SaveFileDialog();
+                    saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                    saveFileDialog.Title = "Save PDF File";
+                    if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        // Construct the URL using the client ID
+                        string url = client.HyperLink;
+
+                        // Show a message box with the URL and file path
+                        string message = "\nFile Path: " + saveFileDialog.FileName;
+                        DialogResult result = MessageBox.Show(message, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (result == DialogResult.Yes)
+                        {
+                            try
+                            {
+                                WebClient webClient = new WebClient();
+                                webClient.DownloadFile(url, saveFileDialog.FileName);
+                                MessageBox.Show("PDF file downloaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                            catch (WebException ex)
+                            {
+                                MessageBox.Show("PDF file download failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("An error occurred while downloading the PDF file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+            private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+            {
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    // Get the selected row and its data source
+                    DataGridViewRow row = dataGridView1.SelectedRows[0];
+                    Client client = row.DataBoundItem as Client;
+
+                    if (client != null)
+                    {
+                        var officeGroup = client.Officegroup;
+                        var status = client.Status;
+                        
+                        // Do something with the officeGroup and status variables
+                    }
+                }
+            }
+
         }
     }
+    
 
