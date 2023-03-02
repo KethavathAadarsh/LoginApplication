@@ -22,10 +22,30 @@ namespace LoginApplication
                 ReturnId = "21c caratworld v1",
                 Clientname = "caratworld inc",
                 Clientid = "caratworld",
-                Preparer = "superglass",
+                Preparer = "superglass-prashant",
                 Officegroup = "PCLLP",
-                Status = "updated",
-                Lastactivated = "26th jan",
+                Status = "pdf review",
+                Lastactivity = "return Uploaded to EFS",
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c KalyanJewele v1",
+                Clientname = "kalyanjewele inc",
+                Clientid = "kalyanjewele",
+                Preparer = "superglass-abhivridhi",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "Return Printed",
             });
             return list;
         }
