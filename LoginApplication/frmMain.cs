@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using System.Net;
 using System.Windows.Forms;
 
@@ -98,7 +99,7 @@ namespace LoginApplication
                     dataGridView1.DataSource = filteredData;
                 }
             }
-
+       
         private void Printpdf_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -126,11 +127,21 @@ namespace LoginApplication
                         {
                             try
                             {
-                                WebClient webClient = new WebClient();
-                                webClient.DownloadFile(url, saveFileDialog.FileName);
+                               
+                                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+
+                                using (WebClient webClient = new WebClient())
+                                {
+                                    //webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
+                                    //webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
+                                    webClient.DownloadFileAsync(new Uri(url), @saveFileDialog.FileName);
+                                }
+                                //webClient.DownloadFile(url,filename);
+                                //}
+                                Console.WriteLine(url);
                                 MessageBox.Show("PDF file downloaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             }
-                            catch (WebException ex)
+                            catch (System.Net.WebException ex)
                             {
                                 MessageBox.Show("PDF file download failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
@@ -146,24 +157,7 @@ namespace LoginApplication
                 }
             }
         }
-            private void dataGridView1_SelectionChanged(object sender, EventArgs e)
-            {
-                if (dataGridView1.SelectedRows.Count > 0)
-                {
-                    // Get the selected row and its data source
-                    DataGridViewRow row = dataGridView1.SelectedRows[0];
-                    Client client = row.DataBoundItem as Client;
-
-                    if (client != null)
-                    {
-                        var officeGroup = client.Officegroup;
-                        var status = client.Status;
-                        
-                        // Do something with the officeGroup and status variables
-                    }
-                }
-            }
-
+          
         }
     }
     
