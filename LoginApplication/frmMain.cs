@@ -84,12 +84,6 @@ namespace LoginApplication
             }
 
         }
-
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            this.Hide();
-           
-        }
         private void GO_Click(object sender, EventArgs e)
         {
             
