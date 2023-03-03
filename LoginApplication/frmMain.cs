@@ -329,6 +329,12 @@ namespace LoginApplication
             var People = this.People;
             dataGridView1.DataSource = People;
             dataGridView1.Columns["HyperLink"].Visible = false;
+            dataGridView1.Columns["ReturnId"].HeaderText = "Return Id";
+            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
+            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
+            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
+            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
+            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightYellow;
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
