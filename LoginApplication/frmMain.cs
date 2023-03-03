@@ -77,7 +77,17 @@ namespace LoginApplication
             var People = this.People;
             dataGridView1.DataSource = People;
             dataGridView1.Columns["HyperLink"].Visible = false;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightYellow;
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold | FontStyle.Underline);
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold | FontStyle.Underline);
+            foreach (DataGridViewColumn col in dataGridView1.Columns)
+            {
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
             foreach (DataGridViewColumn col in dataGridView1.Columns)
             {
                 col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
