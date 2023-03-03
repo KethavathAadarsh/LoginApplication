@@ -99,12 +99,12 @@
             // 
             // printpdf
             // 
-            this.printpdf.Location = new System.Drawing.Point(220, 54);
+            this.printpdf.Location = new System.Drawing.Point(181, 54);
             this.printpdf.Margin = new System.Windows.Forms.Padding(4);
             this.printpdf.Name = "printpdf";
-            this.printpdf.Size = new System.Drawing.Size(100, 28);
+            this.printpdf.Size = new System.Drawing.Size(139, 28);
             this.printpdf.TabIndex = 4;
-            this.printpdf.Text = "printpdf";
+            this.printpdf.Text = "Print Document";
             this.printpdf.UseVisualStyleBackColor = true;
             this.printpdf.Click += new System.EventHandler(this.Printpdf_Click);
             // 
