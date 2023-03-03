@@ -349,6 +349,30 @@ namespace LoginApplication
             {
                 col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
+            comboBox1.Items.Add("All");
+            comboBox1.Items.Add("Item 1");
+            comboBox1.Items.Add("Item 2");
+            comboBox1.Items.Add("Item 3");
+            comboBox1.SelectedIndex = 0;
+           
+            comboBox2.Items.Add("All");
+            comboBox2.Items.Add("Item 1");
+            comboBox2.Items.Add("Item 2");
+            comboBox2.Items.Add("Item 3");
+            comboBox2.SelectedIndex = 0;
+
+            comboBox3.Items.Add("All");
+            comboBox3.Items.Add("Item 1");
+            comboBox3.Items.Add("Item 2");
+            comboBox3.Items.Add("Item 3");
+            comboBox3.SelectedIndex = 0;
+
+            comboBox4.Items.Add("All");
+            comboBox4.Items.Add("Item 1");
+            comboBox4.Items.Add("Item 2");
+            comboBox4.Items.Add("Item 3");
+            comboBox4.SelectedIndex = 0;
+
 
         }
         private void GO_Click(object sender, EventArgs e)
