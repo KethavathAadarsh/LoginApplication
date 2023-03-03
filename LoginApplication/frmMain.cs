@@ -157,9 +157,9 @@ namespace LoginApplication
             try
             {
                 var selectedclient = dataGridView1.SelectedRows[0].DataBoundItem as Client;
-                textBox1ClientId.Text = selectedclient.Clientid.ToString();
-                textBox2ClientName.Text = selectedclient.Clientname.ToString();
-                textBox3Status.Text = selectedclient.Status.ToString();
+                //textBox1ClientId.Text = selectedclient.Clientid.ToString();
+                //textBox2ClientName.Text = selectedclient.Clientname.ToString();
+                //textBox3Status.Text = selectedclient.Status.ToString();
 
             }
             catch
