@@ -152,10 +152,10 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(72, 97);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(63, 21);
+            this.radioButton2.Size = new System.Drawing.Size(66, 21);
             this.radioButton2.TabIndex = 9;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "None";
+            this.radioButton2.Text = "Name";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // label7
