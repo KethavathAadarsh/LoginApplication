@@ -40,7 +40,7 @@
             // 
             // btn_LogOut
             // 
-            this.btn_LogOut.Location = new System.Drawing.Point(352, 17);
+            this.btn_LogOut.Location = new System.Drawing.Point(328, 54);
             this.btn_LogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_LogOut.Name = "btn_LogOut";
             this.btn_LogOut.Size = new System.Drawing.Size(100, 28);
@@ -52,18 +52,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-23, 90);
+            this.dataGridView1.Location = new System.Drawing.Point(181, 90);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1846, 602);
+            this.dataGridView1.Size = new System.Drawing.Size(1642, 602);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // FilterbyclientId
             // 
-            this.FilterbyclientId.Location = new System.Drawing.Point(579, 22);
+            this.FilterbyclientId.Location = new System.Drawing.Point(4, 125);
             this.FilterbyclientId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FilterbyclientId.Name = "FilterbyclientId";
             this.FilterbyclientId.Size = new System.Drawing.Size(157, 20);
@@ -71,7 +71,7 @@
             // 
             // GO
             // 
-            this.GO.Location = new System.Drawing.Point(744, 17);
+            this.GO.Location = new System.Drawing.Point(4, 153);
             this.GO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GO.Name = "GO";
             this.GO.Size = new System.Drawing.Size(53, 28);
@@ -87,7 +87,7 @@
             // 
             // printpdf
             // 
-            this.printpdf.Location = new System.Drawing.Point(244, 15);
+            this.printpdf.Location = new System.Drawing.Point(220, 54);
             this.printpdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.printpdf.Name = "printpdf";
             this.printpdf.Size = new System.Drawing.Size(100, 28);
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 415);
+            this.ClientSize = new System.Drawing.Size(833, 522);
             this.Controls.Add(this.printpdf);
             this.Controls.Add(this.GO);
             this.Controls.Add(this.FilterbyclientId);
