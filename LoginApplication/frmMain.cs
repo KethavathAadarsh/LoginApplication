@@ -46,6 +46,258 @@ namespace LoginApplication
             });
             list.Add(new Client()
             {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
+                ReturnId = "21c chri v1",
+                Clientname = "christi lifestyle llc",
+                Clientid = "chri",
+                Preparer = "superglass-prashant",
+                Officegroup = "PCLLP",
+                Status = "pdf done",
+                Lastactivity = "return Uploaded to EFS",
+                HyperLink = "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+
+            });
+            list.Add(new Client()
+            {
                 ReturnId = "21c KalyanJewele v1",
                 Clientname = "kalyanjewele inc",
                 Clientid = "kalyanjewele",
