@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 
 using System.Net;
@@ -76,6 +77,7 @@ namespace LoginApplication
             var People = this.People;
             dataGridView1.DataSource = People;
             dataGridView1.Columns["HyperLink"].Visible = false;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold | FontStyle.Underline);
             foreach (DataGridViewColumn col in dataGridView1.Columns)
             {
                 col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
