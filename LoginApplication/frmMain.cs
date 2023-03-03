@@ -75,6 +75,7 @@ namespace LoginApplication
         {
             var People = this.People;
             dataGridView1.DataSource = People;
+            dataGridView1.Columns["HyperLink"].Visible = false;
             foreach (DataGridViewColumn col in dataGridView1.Columns)
             {
                 col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
@@ -96,6 +97,7 @@ namespace LoginApplication
                 {
                     // If the filter is empty or null, show all rows
                     dataGridView1.DataSource = People;
+                    dataGridView1.Columns["HyperLink"].Visible = false;
                 }
                 else
                 {
