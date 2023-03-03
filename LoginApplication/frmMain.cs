@@ -75,6 +75,11 @@ namespace LoginApplication
         {
             var People = this.People;
             dataGridView1.DataSource = People;
+            foreach (DataGridViewColumn col in dataGridView1.Columns)
+            {
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            }
+
         }
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)

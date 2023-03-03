@@ -40,9 +40,10 @@
             // 
             // btn_LogOut
             // 
-            this.btn_LogOut.Location = new System.Drawing.Point(528, 12);
+            this.btn_LogOut.Location = new System.Drawing.Point(352, 17);
+            this.btn_LogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_LogOut.Name = "btn_LogOut";
-            this.btn_LogOut.Size = new System.Drawing.Size(75, 23);
+            this.btn_LogOut.Size = new System.Drawing.Size(100, 28);
             this.btn_LogOut.TabIndex = 0;
             this.btn_LogOut.Text = "Log out";
             this.btn_LogOut.UseVisualStyleBackColor = true;
@@ -51,26 +52,29 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(137, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(-23, 90);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(489, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(1846, 602);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
             // 
             // FilterbyclientId
             // 
-            this.FilterbyclientId.Location = new System.Drawing.Point(12, 73);
+            this.FilterbyclientId.Location = new System.Drawing.Point(579, 22);
+            this.FilterbyclientId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FilterbyclientId.Name = "FilterbyclientId";
-            this.FilterbyclientId.Size = new System.Drawing.Size(119, 20);
+            this.FilterbyclientId.Size = new System.Drawing.Size(157, 20);
             this.FilterbyclientId.TabIndex = 2;
             // 
             // GO
             // 
-            this.GO.Location = new System.Drawing.Point(91, 99);
+            this.GO.Location = new System.Drawing.Point(744, 17);
+            this.GO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GO.Name = "GO";
-            this.GO.Size = new System.Drawing.Size(40, 23);
+            this.GO.Size = new System.Drawing.Size(53, 28);
             this.GO.TabIndex = 3;
             this.GO.Text = "GO";
             this.GO.UseVisualStyleBackColor = true;
@@ -83,9 +87,10 @@
             // 
             // printpdf
             // 
-            this.printpdf.Location = new System.Drawing.Point(447, 12);
+            this.printpdf.Location = new System.Drawing.Point(244, 15);
+            this.printpdf.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.printpdf.Name = "printpdf";
-            this.printpdf.Size = new System.Drawing.Size(75, 23);
+            this.printpdf.Size = new System.Drawing.Size(100, 28);
             this.printpdf.TabIndex = 4;
             this.printpdf.Text = "printpdf";
             this.printpdf.UseVisualStyleBackColor = true;
@@ -93,14 +98,15 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 337);
+            this.ClientSize = new System.Drawing.Size(833, 415);
             this.Controls.Add(this.printpdf);
             this.Controls.Add(this.GO);
             this.Controls.Add(this.FilterbyclientId);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_LogOut);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Application";
