@@ -330,11 +330,10 @@ namespace LoginApplication
             dataGridView1.DataSource = People;
             dataGridView1.Columns["HyperLink"].Visible = false;
             dataGridView1.Columns["ReturnId"].HeaderText = "Return Id";
-            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
-            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
-            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
-            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
-            //dataGridView1.Columns["Name"].HeaderText = "Full Name";
+            dataGridView1.Columns["Clientname"].HeaderText = "Client name";
+            dataGridView1.Columns["Clientid"].HeaderText = "ClientId";
+            dataGridView1.Columns["Officegroup"].HeaderText = "Office group";
+            dataGridView1.Columns["Lastactivity"].HeaderText = "Last activity";
             dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.LightYellow;
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.Black;
