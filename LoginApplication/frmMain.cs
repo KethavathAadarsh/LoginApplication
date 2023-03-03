@@ -164,8 +164,23 @@ namespace LoginApplication
                 }
             }
         }
-          
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                var selectedclient = dataGridView1.SelectedRows[0].DataBoundItem as Client;
+                textBox1ClientId.Text = selectedclient.Clientid.ToString();
+                textBox2ClientName.Text = selectedclient.Clientname.ToString();
+                textBox3Status.Text = selectedclient.Status.ToString();
+
+            }
+            catch
+            {
+                MessageBox.Show("something is wrong");
+            }
         }
+    }
     }
     
 
