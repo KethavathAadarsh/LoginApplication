@@ -102,7 +102,7 @@ namespace LoginApplication
                     dataGridView1.DataSource = filteredData;
                 }
             }
-       
+
         private void Printpdf_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -122,45 +122,36 @@ namespace LoginApplication
                     {
                         // Construct the URL using the client ID
                         string url = client.HyperLink;
-
-                        // Show a message box with the URL and file path
-                        string message = "\nFile Path: " + saveFileDialog.FileName;
-                        DialogResult result = MessageBox.Show(message, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                        if (result == DialogResult.Yes)
+                        try
                         {
-                            try
-                            {
-                               
-                                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+                            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
-                                using (WebClient webClient = new WebClient())
-                                {
-                                    //webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
-                                    //webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
-                                    webClient.DownloadFileAsync(new Uri(url), @saveFileDialog.FileName);
-                                }
-                                //webClient.DownloadFile(url,filename);
-                                //}
-                                Console.WriteLine(url);
-                                MessageBox.Show("PDF file downloaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
-                            catch (System.Net.WebException ex)
+                            using (WebClient webClient = new WebClient())
                             {
-                                MessageBox.Show("PDF file download failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
+                                //webClient.DownloadFileCompleted += new AsyncCompletedEventHandler(Completed);
+                                //webClient.DownloadProgressChanged += new DownloadProgressChangedEventHandler(ProgressChanged);
+                                webClient.DownloadFileAsync(new Uri(url), @saveFileDialog.FileName);
                             }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show("An error occurred while downloading the PDF file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
-                            }
+                            //webClient.DownloadFile(url,filename);
+                            //}
+                            Console.WriteLine(url);
+                            MessageBox.Show("PDF file downloaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
-
+                        catch (System.Net.WebException ex)
+                        {
+                            MessageBox.Show("PDF file download failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("An error occurred while downloading the PDF file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            Console.WriteLine(ex.StackTrace); // Print the stack trace to help diagnose the issue
+                        }
                     }
+
                 }
             }
         }
-
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
